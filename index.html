@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>NervDocs</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" />
+</head>
+<body>
+<nav>
+  <a href="nervdocs.gitee.io">NervBot文档</a>
+</nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'NervBot用户文档',
+      repo: 'https://gitee.com/nervbot/nervbot'
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script>
+  window.$docsify = {
+    auto2top: true,
+    themeColor: '#e92063', //主题颜色，选个色号吧
+    loadSidebar: true,
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md',
+    },
+    subMaxLevel: 3,
+    ...
+    sidebarDisplayLevel: 1, // set sidebar display level
+	loadNavbar: true, // 加载导航栏
+	search: {
+        noData: {
+          '/': '没有结果!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': '搜索'
+        }
+  }
+  function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span>Copyright &copy; 2019 - Present Innorevc. All rights reserved.</span><br>',
+            '</footer>',
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+
+<!-- plugins -->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+ <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<!-- index.html -->
+
+<script>
+  window.$docsify = {
+    loadSidebar: true
+  }
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<style type="text/css">
+.content {
+  overflow: auto;
+  }
+</style>
+</body>
+</html>
